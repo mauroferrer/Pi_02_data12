@@ -41,12 +41,12 @@
 <hr>
 
 ### **PAGINA 1**
-<img src="Captura de pantalla 2023-07-18 195459.png"  height=600>
+<img src="Captura de pantalla 2023-07-18 195459.png"  height=500>
 
 
 ### **PAGINA 2**
  
-<img src="Captura de pantalla 2023-07-18 202446.png"  height=600>
+<img src="Captura de pantalla 2023-07-18 202446.png"  height=500>
 
 <hr>
 
