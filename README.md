@@ -1,40 +1,12 @@
 <img src=https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png><p>
 
-# <h1 align=center> **PROYECTO INDIVIDUAL Nº2** </h1>
-
-# <h1 align=center>**`Data Analytics - Accesos a internet en Argentina - Mauro Ferrera'**</h1>
 
 <p align="center">
 <img src="https://tse4.mm.bing.net/th?id=OIP.reSA0MFdOEL-ygYTvIYe8AHaCw&pid=Api&P=0&h=180"  height=300>
 
 </p>
 
-## ¡Bienvenido/a a este proyecto centrado en el análisis exploratorio de datos (EDA) y la creación de un Dashboard en Power BI con el objetivo de llevar a cabo un trabajo de Data Analytics. Nuestra meta principal es realizar un análisis exhaustivo que nos proporcione una comprensión clara del comportamiento del sector de acceso a Internet a nivel nacional.
 
-<hr>  
-
-## Descripción del problema (Contexto y rol a desarrollar):
-
-### En el contexto de este proyecto, asumimos el papel de un Analista de Datos con el objetivo de proporcionar orientación a la empresa para ofrecer servicios de alta calidad, identificar oportunidades de crecimiento y presentar soluciones personalizadas a sus potenciales clientes. Nuestro enfoque se centra en el análisis de datos para obtener información valiosa que permita tomar decisiones estratégicas fundamentadas.
-
-<hr>  
-
-## *PASO 1* 
-### **Análisis Exploratorio de Datos (EDA)** 
-### Realizamos un minucioso análisis exploratorio de los datos en un entorno de trabajo, siguiendo una metodología documentada con precisión. Las conclusiones obtenidas se encuentran debidamente asociadas a cada gráfico y análisis realizado. 
-
-      Archivo del EDA: EDA-ETL.ipynb
-
-<hr>
-
-## *PASO 2* 
-### **Desarrollo de un Dashboard Funcional** 
-### Creamos un dashboard interactivo que ofrece coherencia y narrativa visual, incorporando filtros para profundizar en los datos. Su diseño ha sido cuidadosamente diseñado para facilitar la interpretación de la información
-
-      Archivo del dashboard: Analisis_BI_internet.pbix
-
-
-<hr>
 
 ## **ANALISIS**
 
@@ -50,77 +22,72 @@
 
 <hr>
 
-## *PREGUNTAS PLANTEADAS*
+# PROYECTO INDIVIDUAL Nº 2  
+# Telecomunicaciones
 
-### 1. ¿Cuál es la velocidad promedio de descarga en Mbps en Argentina?
+## Objetivo  
+Análisis para describir el comportamiento de la industria de las telecomunicaciones en Argentina, en particular el servicio de internet.
 
-### 2. ¿Cuáles son las provincias con mayor y menor número de usuarios conectados a Internet?
+## Contenido del repositorio  
+* **main**:  dashboard y pdf generado, archivos 'pi02_luislq_v4'  
+* **dataset**:  archivos fuente originales bajados de la página ENACOM, y otros modificados convenientemente para su análisis y utilización
+* **eda**:  scripts de python
+    - *bajarDatasets.ipynb*: baja archivos utilizando la API
+    - *eda_v2.ipynb*: análisis exploratorio de datos, modificación de algunos archivos para usarlos posteriormente  
+* **sql_py**:  otros archivos
+    - *pi02_db1.accdb*: base de datos *Access* que es utilizada como fuente en el dasboard tabla *z02*. Esta consulta calcula el ratio ***Accesos cada 100 habitantes*** aperturado por 'Localidad'
+    - *pi02_da_kpi.sql*: se utiliza en *MySQL* para crear las vistas *kpi01_tasarec* y *kpi02_arpu* para calcular los KPI ***Tasa de Reclamos*** y ***ARPU*** respectivamente que son fuentes de datos para el dashboard
+    - *17_intLocalidades_tecnologias.py.txt*: script Python que se ejecuta en *Power BI* con el propósito de unificar la información de tecnologías por localidad en una sola columna  
 
-### 3. ¿En qué año se registraron los mayores ingresos?
-
-### 4. ¿Qué tecnología se encuentra actualmente en tendencia?
-
-### 5. ¿Ha aumentado la velocidad promedio de descarga en Mbps a lo largo de los años?
-
-### 6. ¿Cuál es la tecnología con la mayor cantidad de instalaciones?
-
-### 7. ¿Los ingresos a lo largo de la historia han sido crecientes o decrecientes?
-
-<hr>
-
-## *CONCLUSIONES OBTENIDAS*
-
-### 1. En Argentina, la velocidad promedio de descarga actual es de 58.67 Mbps. 
-
-
-### 2. La provincia con la mayor cantidad de usuarios conectados es 'Capital Federal', mientras que 'Formosa' cuenta con la menor cantidad de usuarios. 
-
-
-### 3. El año 2022 registró la mayor cantidad de ingresos, alcanzando la suma de 182.981.651 pesos. 
-
-
-### 4. La fibra óptica ha experimentado una tendencia alcista desde 2018 hasta 2022.
-
-
-### 5. En efecto, el promedio de Mbps en Argentina ha mantenido un crecimiento constante, comenzando en 3.85 y llegando actualmente a 58.67.
-
-
-### 6. La tecnología más utilizada es el 'Cable Modem', con un total de 144.291.039 instalaciones. 
-
-
-### 7. Los ingresos han mostrado un crecimiento constante a lo largo de la historia, sin retrocesos.
-
-<hr>
-
-## *KPIS*
-
-### 1. Creamos un KPI que nos indica si aumento o bajo la tasa de accesos a internet comparando el año actual con el año anterior 
-
-### 2. Creamos un KPI que no mide la velocidad promedio de bajada en Mbps con un objetivo de llegar al 40 Mbps siendo cumplida en el año 2020
-
-### 3. Creamos un KPI que nos mide el total de ingresos a lo largo de la historia(se puede filtrar por año) y como objetivo tiene llegar a 190 millones de pesos para el año proximo, faltando un monto de 7 millones de pesos para cumplir con el objetivo 
-
-
-<hr>
-
-## Descripcion de los datos utilizados
-
-### **Año :**                          <h3 align=center>  rango años del 2014 a 2022 </h3>
-### **ADSL :**                         <h3 align=center>Cantidad de instalaciones con  tecnologia ADSL </h3>
-### **Cablemodem :**                   <h3 align=center>Cantidad de instalaciones con tecnologia Cablemodem </h3>
-### **Fibra optica :**                 <h3 align=center>Cantidad de instalaciones con la tecnologia de Fibra optica </h3>
-### **Wireless :**                     <h3 align=center>Cantidad de instalaciones con la tecnologia de Wireless </h3>
-### **Mbps (Meda de bajada) :**        <h3 align=center>Velocidad promedio de bajada en Mbps </h3>
-### **Provincia :**                    <h3 align=center>Provincias de Argentina </h3>
-### **Accesos por cada 100 hogares :** <h3 align=center>Cantidad de hogares que tienen acceso a conexion a internet </h3>
-### **KPI :**                          <h3 align=center>Nos indica si subio o bajo la tasa de 'accesos por cada 100 hogares' </h3>
-### **Tasa accesos :**                 <h3 align=center>Tasa porcentual de la columna 'accesos por cada 100 hogares' </h3>
-### **Ingresos(en miles de pesos) :**  <h3 align=center>Ingresos generados por la empresa </h3>
-
-<hr>
-
-### *Firma:* https://www.linkedin.com/in/mauro-ferrera/
-
-#### Gracias por ver <3
-
+## Análisis en base al dashboard  
+Organizado por *pagina*  
+### 1. Internet en Argentina ###  
+- Contexto en grandes números para entender el desarrollo del servicio intenet en Argentina con datos actualizados al 3er trimestre de 2023  
+### 2. Evolución de los accesos y de la velocidad ###  
+- 2014 a 2017
+    - las *"telcos"* utilizan la red de dispersión de cables de CU y tecnología *ADSL* para brindar el servicio de internet, la velocidad está limitada a 10Mbps con medias mucho menores entre 2 y 3 Mbps. *ADSL* es el acceso más utilizado en 2014 va disminuyendo suavemente (58 a 44%). Se observa una expansión muy lenta de la *FO* dirigida a los segmentos de clientes TOP
+    - en tanto las empresas de TV *"cableras"* se valen del coaxil instalado para paquetizar el servicio de internet en su base de clientes, la tecnología utilizada es *CM* que aumenta en desmedro del *ADSL* (38 a 44%)
+- 2017
+    - el *ADSL* sobre par de CU pierde terreno a manos del *CM*, esta última tecnología posibilita mayor velocidad.  Se produce migración de clientes y cambio de estrategia de las *telcos* para poder seguir en el negocio: reinversión p/cambiar el medio físico *CU* a *coaxil* o *FO*, asociación/fusión con empresas de cable
+- 2018
+    - la velocidad media de bajada supera los 10Mbps, el *ADSL* ya no es viable para competir en el mercado
+- 2018 a 2023
+    - crecen los accesos *CM* en un +52% y el *CU* disminuye en -61%
+    - para *FO* el crecimiento muy significativo, 13 veces más accesos lo que representa un +1220 %
+- Conclusiones
+    - para continuar en el negocio hay que brindar un servicio de alta velocidad, lo cual lleva a contar con una infraestructura que permita competir ahora y prepararse para el futuro (muy próximo).  El medio físico es sin duda alguna la *FO* muy superior al *cable oaxil*.
+### 3. Localidades y tecnologías ###  
+- mapa interactivo con filtros de:
+    - provincia y localidad
+    - tecnologías disponibles
+        - telefonía fija (TF, WL, SAT)
+        - telefonía móvil (3G, 4G)
+        - accesos de internet (DU, ADSL, WL, SAT, CM, FO)
+        - tecnología red de transporte (FO)
+    - tabla con información relevante
+    - para la toma de desiciones es fundamental el conocimiento del territorio, tecnologías disponibles y un concepto fuerte sobre las áreas y distancias dada la gran superficie a cubrir y cantidad de aglomerados urbanos en Argentina
+### 4. Areas de interés ###  
+- pagina interactiva con el objetivo de reconocer rápidamente las áreas de mayor interés para focalizar esfuerzos en la calidad de servicio y/o expansión de la red.
+- un *área de interés* se conceptualiza como un agromerado urbano con gran cantidad de población y cuya penetración *accessos cada 100 habitantes* sea menor en relación a otras áreas similares.
+- los siguientes filtros permiten visualizar estas áreas interactivamente:
+    - provincia, partido
+    - accesos cada 100 hab (límite superior)
+- visualización de tabla con información relevante y cantidad de *áreas de interés* de acuerdo a la selección elegida de filtros
+### 5. Internet vs TV ###  
+- comparación entre los servicios de *internet* y *TV pago* 
+    - gráfico lineal comparativo de los ingresos y su evolución en período de muestra
+    - gráfico comparativo de la *cantidad de accesos cada 100 hogares* con filtros que permiten ver su evolución en el período de muestra
+- conclusiónes: 
+    - el ingreso de internet aumenta con mayor rapidez, se evidencia al visualizar la evolución comparativa de los accesos que el negocio esta *centrado en internet*
+    - una oportunidad a considerar para el crecimiento del negocio es la paquetización de los servicios de *TV* sobre el servicio base *internet*  
+### 6. KPI - Tasa de Reclamos ###  
+- cantidad de reclamos ingresados a ENACOM por cada millón de accesos de internet fijo
+    - kpi referido a la operación relacionado entre muchos otros con la *calidad del servicio*
+### 7. KPI - ARPU ### 
+- promedio de ingresos por usuario
+    - en este ejemplo, por no contar con *base de clientes* el kpi se ha calculado como el *promedio de ingresos por acceso*, cuyo resultado no es igual al ARPU real (por cliente)
+    - kpi referido a la *rentabilidad del negocio* 
+### 8. KPI - Penetración Internet ###  
+- cantidad de accesos internet fija cada 100 habitantes
+    - kpi referido al *desarrollo de la red de accesos internet fija*
 
