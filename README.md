@@ -29,18 +29,16 @@
 Análisis para describir el comportamiento de la industria de las telecomunicaciones en Argentina, en particular el servicio de internet.
 
 ## Contenido del repositorio  
-* **main**:  dashboard y pdf generado  
+* **main**:  dashboard  
 * **dataset**:  archivos fuente originales bajados de la página ENACOM, y otros modificados convenientemente para su análisis y utilización
 * **EDA**: EDA.ipynb
 * **ETL**: ETL.ipynb
   
 ## Análisis en base al dashboard  
-Organizado por *pagina*  
-### 1. Internet en Argentina ###  
-- Contexto en grandes números para entender el desarrollo del servicio intenet en Argentina con datos actualizados al 3er trimestre de 2023  
+ 
 ### 2. Evolución de los accesos y de la velocidad ###  
 - 2014 a 2017
-    - las *"telcos"* utilizan la red de dispersión de cables de CU y tecnología *ADSL* para brindar el servicio de internet, la velocidad está limitada a 10Mbps con medias mucho menores entre 2 y 3 Mbps. *ADSL* es el acceso más utilizado en 2014 va disminuyendo suavemente (58 a 44%). Se observa una expansión muy lenta de la *FO* dirigida a los segmentos de clientes TOP
+    - las *"telcos"* utilizan la red de dispersión de cables de CU y tecnología *ADSL* para brindar el servicio de internet, la velocidad está limitada a 10Mbps con medias mucho menores entre 2 y 3 Mbps. *ADSL* es el acceso más utilizado en 2014 va disminuyendo suavemente (58 a 44%).
   
 - 2017
     - el *ADSL* sobre par de CU pierde terreno a manos del *CM*, esta última tecnología posibilita mayor velocidad.  Se produce migración de clientes y cambio de estrategia de las *telcos* para poder seguir en el negocio: reinversión p/cambiar el medio físico *CU* a *coaxil* o *FO*, asociación/fusión con empresas de cable
@@ -55,8 +53,6 @@ Organizado por *pagina*
 - mapa interactivo con filtros de:
     - provincia y localidad
     - tecnologías disponibles
-        - telefonía fija (TF, WL, SAT)
-        - telefonía móvil (3G, 4G)
         - accesos de internet (DU, ADSL, WL, SAT, CM, FO)
         - tecnología red de transporte (FO)
     - tabla con información relevante
@@ -65,16 +61,16 @@ Organizado por *pagina*
 - pagina interactiva con el objetivo de reconocer rápidamente las áreas de mayor interés para focalizar esfuerzos en la calidad de servicio y/o expansión de la red.
 - un *área de interés* se conceptualiza como un agromerado urbano con gran cantidad de población y cuya penetración *accessos cada 100 habitantes* sea menor en relación a otras áreas similares.
 - los siguientes filtros permiten visualizar estas áreas interactivamente:
-    - provincia, partido
+    - provincia
     - accesos cada 100 hab (límite superior)
 - visualización de tabla con información relevante y cantidad de *áreas de interés* de acuerdo a la selección elegida de filtros
 
 
-### 5. KPI - ARPU ### 
-- promedio de ingresos por usuario
+### 5. KPI - Tasa de Acceso ### 
+- Promedio de Accesos por Hogares 
     - en este ejemplo, por no contar con *base de clientes* el kpi se ha calculado como el *promedio de ingresos por acceso*, cuyo resultado no es igual al ARPU real (por cliente)
     - kpi referido a la *rentabilidad del negocio* 
-### 6. KPI - Penetración Internet ###  
-- cantidad de accesos internet fija cada 100 habitantes
-    - kpi referido al *desarrollo de la red de accesos internet fija*
+### 6. KPI - Promedio de Velocidad de Descarga ###  
+- Promedio de velocidad de descarga con filtro de tiempo
+  
 
